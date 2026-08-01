@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 25th My Shine 🎂</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <div class="bg-elements">
+    <div class="cloud">☁️</div>
+    <div class="cloud">☁️</div>
+    <div class="heart-float">💖</div>
+    <div class="heart-float">✨</div>
+    <div class="heart-float">💙</div>
+  </div>
+
+  <div class="container">
+    <!-- ပထမစာမျက်နှာ (ပန်းစည်းပုံ) -->
+    <div class="card active" id="page1">
+      <div class="gif-box custom-img">
+        <img src="img1.jpg" alt="Flower Gift">
+      </div>
+      <h2>Happy 25th my shine! 🎂</h2>
+      <p>I have a special birthday gift box for you. Do you want to open it? 🎁✨</p>
+      <button class="btn" id="openGiftBtn">Open Gift Box 🎁</button>
+    </div>
+
+    <!-- ဒုတိယစာမျက်နှာ (သီချင်း) -->
+    <div class="card" id="page2">
+      <div class="gif-box custom-img">
+        <img src="img2.jpg" alt="Birthday Cake">
+      </div>
+      <h2>🎵 Song for You</h2>
+      <p>This is the song that always reminds me of you...</p>
+      <div class="music-box">
+        <iframe width="100%" height="110" src="https://www.youtube.com/embed/p6m4_qp9KCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <button class="btn" id="toLetterBtn">Read Letter 💌</button>
+    </div>
+
+    <!-- တတိယစာမျက်နှာ (စာလွှာ) -->
+    <div class="card" id="page3">
+      <h2>💌 A Letter for You</h2>
+      <div class="notepad-paper">
+        <div class="scroll-content">
+          <p id="typewriterText"></p>
+        </div>
+      </div>
+      <button class="btn hidden" id="toProposalBtn">Continue ❤️</button>
+    </div>
+
+    <!-- စတုတ္ထစာမျက်နှာ (မျက်နှာငယ်ပုံ - img3.jpg) -->
+    <div class="card" id="page4">
+      <div class="gif-box custom-img">
+        <img src="img3.jpg" alt="Cute Pleading">
+      </div>
+      <h2>Will you truly love me back? 🥺💖</h2>
+      <p>As a birthday gift, please be mine...</p>
+      <div class="btn-group">
+        <button class="btn" id="yesBtn">Yes! 🥰</button>
+        <button class="btn" id="noBtn">No 😢</button>
+      </div>
+    </div>
+
+    <!-- ပဉ္စမစာမျက်နှာ (အောင်မြင်ခြင်း) -->
+    <div class="card" id="page5">
+      <div class="gif-box custom-img">
+        <img src="img2.jpg" alt="Happy Ending">
+      </div>
+      <h2>Yaaay! 🎉❤️</h2>
+      <p>Thank you for making me the happiest person alive! Happy 25th Birthday, my dear hubby! 🥰🎂✨</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
